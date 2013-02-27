@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.extensions        = ['ext/trace_nums/extconf.rb']
   s.description       = "Do not use"
   s.required_ruby_version = '>= 1.9.3'
-  s.add_dependency  "ruby_core_source", "=> 0.1.5"
+  s.add_dependency  "ruby_core_source", ">= 0.1.5"
 end
