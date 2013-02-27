@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version           = "0.5.13"
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = "Do no use"
-  s.homepage          = "http://github.com/robmathews/linecache19-0.5.13"
+  s.homepage          = "http://github.com/st3v/linecache19-0.5.13"
   s.email             = "noreply@noemail.com"
   s.authors           = [ "Do Not Use" ]
   s.has_rdoc          = false
@@ -14,7 +14,8 @@ Gem::Specification.new do |s|
   s.files            += Dir.glob("bin/**/*")
   s.files            += Dir.glob("man/**/*")
   s.files            += Dir.glob("test/**/*")
-#  s.executables       = %w( #{name} )
+  s.files            += Dir.glob('ext/**/*.{c,h,rb}')
+  s.extensions        = ['ext/trace_nums/extconf.rb']
   s.description       = "Do not use"
   s.required_ruby_version = '>= 1.9.3'
 end
